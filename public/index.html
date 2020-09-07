@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="body.css">
+  <link rel="shortcut icon" href="img/'.ico" type="image/x-icon">
+  <title>Ninja Food</title>
+</head>
+<body class="text-red-600 font-sniglet">
+  <div class="grid md:grid-cols-3"><!--content wrapper--> 
+
+    <div class="md:col-span-1 food-btn md:flex md:justify-end"> <!--nav wrapper-->
+      <nav class="text-right">
+        <div class="bg-white sm:flex sm:justify-between sm:items-center">
+          <h1 class="font-bold p-2 uppercase mr-4 sm:col-span-1">
+            <a href="/" class="text-3xl">Ninja Food</a>
+          </h1>
+          <div class="md:hidden" id="burger">
+            <svg class="w-10 inline-block bg-white cursor-pointer" viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <ul class="text-xl bg-white md:mt-2 md:inline-block hidden md:block" id="menu">
+          <li class="py-1 mr-4 hover:underline">
+            <a href="#">
+              <span>Home</span>
+              <svg class="w-5 inline" viewBox="0 0 20 20" fill="currentColor" class="home w-6 h-6"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+            </a>
+          </li>
+          <li class="py-1 mr-4 hover:underline"">
+            <a href="#">
+              <span>About</span>
+              <svg class="w-5 inline" viewBox="0 0 20 20" fill="currentColor" class="question-mark-circle w-6 h-6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+            </a>
+          </li>
+          <li class="py-1 mr-4 hover:underline"">
+            <a href="#">
+              <span>Contact</span>
+              <svg class="w-5 inline" viewBox="0 0 20 20" fill="currentColor" class="mail w-6 h-6"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class=" pl-16 pr-16 py-6 bg-gray-300 md:col-span-2"> <!--main content-->
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="btn hover:bg-white hover:text-red-600  hover:border-b-2">
+          <svg class="w-5 inline" viewBox="0 0 20 20" fill="currentColor" class="lock-closed w-6 h-6"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+          Login
+        </a>
+        <a href="#" class="btn ml-2 hover:bg-white hover:text-red-600  hover:border-b-2">
+          <svg class="w-5 inline" viewBox="0 0 20 20" fill="currentColor" class="user-circle w-6 h-6"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path></svg>
+          Sign Up
+        </a>
+      </div>
+
+      <header>
+        <h2 class="text-6xl">Recipes 🍲</h2>
+        <h3 class="text-3xl">For Ninjas 🐱‍👤</h3>
+      </header>
+
+      <div>
+        <h4 class="sub-heading">Latest Recipes</h4>
+
+        <div class="mt-8 grid lg:grid-cols-3 grid gap-10"> <!-- Card wrapper -->
+          <div class="card hover:shadow-xl">
+            <img src="img/stew.jpg" alt="stew" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">5 Bean Chilli Soup</span>
+              <span class="block text-gray-600 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>10 mins</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl">
+            <img src="img/curry.jpg" alt="curry.jpg" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Curry Stew</span>
+              <span class="block text-gray-600 text-sm">Recipe by Yoshi</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl
+          ">
+            <img src="img/noodles.jpg" alt="noodles.jpg" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Veg Noodles</span>
+              <span class="block text-gray-600 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>15 mins</span>
+            </div>
+          </div>
+        </div>
+     
+        <h4 class="sub-heading">Most Popular</h4>
+        
+        <div class="mt-8 grid lg:grid-cols-3 grid gap-10"> <!-- Card wrapper -->
+          <div class="card hover:shadow-xl">
+            <img src="img/morroco.webp" alt="morroco" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Morocco Soup</span>
+              <span class="block text-gray-600 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>30 mins</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl">
+            <img src="img/olive.webp" alt="olive" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Olive Stew</span>
+              <span class="block text-gray-600 text-sm">Recipe by Yoshi</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>7 mins</span>
+            </div>
+          </div>
+          <div class="card hover:shadow-xl
+          ">
+            <img src="img/chilli.webp" alt="chilli.webp" class="w-full  h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">Chilli Soup</span>
+              <span class="block text-gray-600 text-sm">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <svg class="inline w-5" viewBox="0 0 20 20" fill="currentColor" class="clock w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span>5 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <div class="btn hover:bg-white hover:text-red-600 hover:underline">Load more...</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="nav.js"></script>
+</body>
+</html>
