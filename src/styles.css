@@ -12,7 +12,7 @@
 }
 
 .sub-heading {
-  @apply font-bold mt-12 pb-2 border-b border-red-600;
+  @apply mt-12 pb-2 border-b border-red-600;
 }
 
 .btn {
