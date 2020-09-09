@@ -1,7 +1,7 @@
 
-# PHP Learning 🐱‍👤🥘
+# ninjafood 🐱‍👤🥘
 
-A recipe website for ninjas, built with Tailwind CSS. songoloso!
+A recipe website for ninjas, built with Tailwind CSS. Songoloso!
 
 ## Getting Started
 
